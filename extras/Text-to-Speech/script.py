@@ -2,9 +2,9 @@ from os import system as installer
 installer("pip install pyttsx3")
 import pyttsx3
 
-engine = pyttsx3.init()
-engine.setProperty('rate', 175)
 def Speak(text):
+    engine = pyttsx3.init()
+    engine.setProperty('rate', 175)
     engine.setProperty(
         'voice', 
         engine.getProperty('voices')[
@@ -25,3 +25,6 @@ def message_event(msg):
     
     print(author+": "+content)
     Speak(content)
+
+def tick():
+    pass
