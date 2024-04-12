@@ -1,61 +1,59 @@
 Hello! Thank you for using my script for reading Kick.com chat messages :3
-
-Need help with anything? Contact me on Discord at 37scorpions!
-Just please DM me saying what you want, don't just go "hi" and wait for my response.
-Also before you ask me to explain you anything please tell me your skill level: Have you used a computer? Have you used a command prompt? Have you used Python? This helps me determine how much I need to explain to you as I may just start explaining the history of python.
-Brief warning before you contact me though, I'm a furry and I like boys.
-
 If you don't like reading, just quickly skim over this file and read anything that catches your eye. It is quite important to read this to understand how to use it.
 
 
 
-IMPORTANT NOTE TO FUTURE PEOPLE:
+CONTACT (READ FULLY BEFORE CONTACTING):
 
-So as I watch my script age I notice how in the future it will most likely become rather useless. Why may you ask? Well, you see, this script was made at the very start of Kick.com when no one had their hands on any APIs or API wrappers. This script opens a browser and reads the messages through it, but I see people venturing into the Kick.com API and making easier to use and generally more practical API wrappers which not only improve the chat reading but also add ways to send messages into chat. Even if you just want to use this script to read your chat I advise you find something else only using this script as a last resort. This script breaks very fast if the structure of Kick changes, meanwhile an API wrapper is going to be more maintained and stable. I just want to mention this because a few people have come to me asking why I did it the way I did it, and this is the answer.
-If you want a good API wrapper, I linked one at the bottom of this file.
+Need help with anything? Contact me on Discord at 37scorpions!
+When DMing me do tell me that you're referring to this script, I can't read your mind.
+Note that I am only here to help you with problems that arise while using the script or if you don't understand how something works. Don't DM me if you don't know how python works, don't DM me if you need help with python related problems and certainly don't DM me if you expect me to work for you (I'm a minor lol).
+Also brief warning before you contact me, I am a furry and I like boys. Yes, I'm not lying. Many people have gotten mad at me about it after adding me to message me.
 
-TLDR: Script is old (but still maintained), use other newer script for better experiance. 
+
+
+ABOUT (READ FULLY BEFORE USING):
+
+This script is a simple python-based Kick.com chat reader that opens a browser and reads the HTML to fetch chat messages, it does NOT use the API to read the chat.
+It is made for people who know Python and are looking to skip needing to decompile the structure of the Kick.com website to read chat messages.
+Let your imagination run loose without needing to lay the floors it runs on.
 
 
 
 SETUP:
 
-1: Run "install.py" to install required packages
-2: Open the channel.txt file and enter your channels username
-3: Open script.py with notepad, notepad++, sublime text or whatever you want
-4: Edit the code to do what you want it to do
-5: Save it and run executor.py
-6: Done!
+1: Open the channel.txt file and enter your channels username
+2: Open script.py with a text editor or python IDE and edit the code within to do whatever you want it to do
+3: Save it and run script.py
+4: Done!
 
 
 
 NOTES:
 
-- Make sure to run update.py every once in a while to check for new updates to the script.
+- You NEED to have PIP for the packages, otherwise the script will fail to install them.
+- If you run into any issues try checking the github page for whether there is a newer version, otherwise DM me and I'll try to fix it.
 - You don't need to be streaming for this script to work.
 - Make sure you have Chrome installed, undetected-chromedriver may not function without it.
+- If you have package related issues (ones coming from packages instead of the scripts themselves) try installing these specific versions of the required packages: selenium 4.10.0, undetected_chromedriver 3.5.3
 - If the script doesn't work, give it a kiss and try again.
 - If the script still doesn't work, contact me on Discord.
-- If you have package related issues (ones coming from packages instead of the scripts themselves) try installing these specific versions of the required packages: selenium 4.10.0, undetected_chromedriver 3.5.3
 
 
 
 Q&A:
 
 - How does it work?
-It launches a browser (Chrome), goes to your channels chatroom page on Kick.com and reads the page source to fetch messages.
-
-- Is this allowed?
-I have no idea. Other Kick.com bots like Botrix use a browser extension to view things like alerts and such, I don't think this is that far from that.
+It launches a browser (Chrome) using undetected_chromedriver, goes to your channels chatroom page on Kick.com and reads the page source to fetch messages.
 
 - Why should I use this?
-No reason, as people look deeper and deeper into Kicks API a lot of more conviniant wrappers are getting out into the public. This script was made at the very start of Kick when no one knew anything about the API so it was pretty useful back then, now it's kind of useless.
+No reason, as people look deeper and deeper into Kicks API a lot of more conviniant wrappers are getting out into the public. This script was made at the very start of Kick when no one knew anything about the API so it was pretty useful back then, now it can be replaced by scripts that use the API.
 
 - Is it reliable?
-Since v1.6 the script is way more reliable as it never gets detected as a fake browser. In terms of being up to date to the website, as I no longer stream myself I may not notice if the script breaks due to a website HTML structure update, though if you notify me I will try to push a fix as soon as possible. If you noticed the script doesn't work and you believe it's the scripts fault, you can always contact me on Discord.
+Due to HTML structure changes the script does tend to break but it's been a while since that happened. If you ever have issues with the script that seem to come from it being out of date you can DM me and I'll try to get it fixed.
 
 - Can I send chat messages with this?
-Yes, but no... well, you kind of could but not anymore. If you're looking to use this as a simple chat reader, go ahead, though if you want to make something more complex like a bot I heavily advise you to go out and look for an API wrapper made by someone else, or even make your own. This script uses a browser to fetch messages from the core browser source rather than the core API so that introduces a few obsticles into the message sending process such as needing to log in each time you launch the script and that you have to focus the browser all of the time in order to send messages, so you technically could send messages but I removed the functions to not cause any confusion. Again, if you want to send messages, find an API wrapper.
+Yes, but no... well, you kind of could but not anymore. If you're looking to use this as a simple chat reader, go ahead, though if you want to make something more complex like a bot I heavily advise you to go out and look for an API wrapper made by someone else, or even make your own. This script uses a browser to fetch messages from the browser source rather than the kick.com API so that introduces a few obsticles into the message sending process such as needing to log in each time you launch the script and that you have to focus the browser all of the time in order to send messages, so you technically could send messages but I removed the functions to not cause any confusion. TL;DR: if you want to send messages, find an API wrapper.
 
 - Does this come with premade scripts?
 Yes, one. It's a text to speech script that reads chat messages aloud. You can find it in the extras folder.
@@ -63,14 +61,11 @@ Yes, one. It's a text to speech script that reads chat messages aloud. You can f
 - Do I need to credit you?
 No... Unless you want to.
 
-- I want to read and send messages using the API, what projects do that?
-I have linked a working async API wrapper for kick.com at the bottom of this file, check it out if you want.
-
 - Can I install this script as a package using PIP?
 No, I cannot be bothered to find a way to make this into a PIP package, you can only use this by downloading the project files and modifying the script.py file.
 
 - Is this a virus?
-No, but good that you're being cautious. For your own safety make sure to review this script (and any script you get in the future) to make sure it won't perform malicious actions on your device. Stay safe out there!
+No, but good that you're being cautious. For your own safety make sure to review this script (and any script you get in the future) to make sure it won't perform malicious actions on your device, especially if you accidentally got it from someone who isn't me (Scorp). Stay safe out there!
 
 
 
@@ -78,7 +73,7 @@ IDEAS:
 
 - Chat message TTS
 Read chat messages using the pyttsx3 text to speech package. (https://pypi.org/project/pyttsx3/)
-   Available in Extras folder!!!
+   Available in Extras folder!
 
 - Chat sound effects
 Play sounds when chat uses certain commands, for example !fart
@@ -96,18 +91,27 @@ and much more! The limit is your imagination... and your python knowledge.
 
 
 
-MORE INFO:
+CHANGELOG:
 
-So you want to know how this script works in depth? Mayhaps you want to edit the scripts to work how you want it? Sure! Here's me explaining how it works.
+v1.11
+- made the reader wait until you finish the page captcha to prevent reading problems
+- fixed update.py
 
- - install.py is a short script which runs "pip install" commands on the two required packages for this script: undetected_chromedriver and bs4 (bs4 is no longer used).
- - update.py is another short script which opens a browser, goes to the github repository for this script, reads the version file and sees if the users version is the same as the one found in the browser. It knows the current version by checking the hidden "version" file in this folder.
- - script.py is where the user is meant to input their code, when executor.py is ran it will read the code in script.py and reader.py and run them.
+v1.12
+- made install.py only get selenium 4.10.0
+- fixed script not picking up on bot usernames
 
-Now, reader.py, the main meat of this script:
-First off it gets the "channel.txt" file to get the users channel. It then appends "https://www.kick.com/" to the start of it and "/chatroom" to the end of it to create the link to that users channel chatroom. It uses undetected_chromedrivers webdriver to open Chrome and gets the source code of the url. Then it just runs an infinite loop that checks for new messages every set amount of seconds. It does this by getting the page source, splits that page source into pieces to understand where are which messages (if you're wondering what the html jamble means, it's just stuff I found that usually occurs before and after messages in the HTML code and I use it to split the text), it compiles the found messages into a list and then checks if any messages haven't been read yet. If one hasn't, the script get's that message, sends it to the message_event function and appends the message to the readenMessages array.
+v1.13
+- made install.py install setuptools because undetected_chromedriver seems to require it
+- fixed and improved update.py
 
-Aaand that's all I think. Please don't judge my choice of names for the variables, I'm really bad at naming variables in my code. DM me on Discord if you need any help with understanding the code!
+v1.14
+- significantly cut down on the amount of files
+- slightly documented reader.py
+- changed reader.py name to main.py
+- improved README.txt
+- made browser make itself smaller
+- fixed tts extra script
 
 
 
@@ -115,7 +119,6 @@ END OF FILE:
 
 Thanks to DKnightX91 for showing me undetected_chromedriver!
 Want to support me? Just a thanks is enough <3
-My channel: https://www.twitch.tv/37scorpions
 
 If you're looking for an API wrapper capable of reading AND sending messages you can check out https://github.com/cibere/kick.py, haven't tried it myself but it looks like a good async API wrapper.
 

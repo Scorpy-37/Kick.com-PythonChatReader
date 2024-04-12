@@ -14,3 +14,5 @@ def message_event(msg): # This event fires whenever there is a new message in ch
 
 def tick(): # This event fires every chat check tick
     pass    # Do nothing
+
+exec(open("main.py").read()) # Run the main.py code (DO NOT TOUCH)
