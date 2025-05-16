@@ -1,3 +1,5 @@
+Edit: Thanks to all the support and usage of the script! I'm surprised it still works after so long of not being maintained
+
 Hello! Thank you for using my script for reading Kick.com chat messages :3
 If you don't like reading, just quickly skim over this file and read anything that catches your eye. It is quite important to read this to understand how to use it.
 
