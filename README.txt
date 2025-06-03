@@ -5,6 +5,7 @@ After 2 years of the script existing, and an entire year of me not maintaining i
 Thank you a lot to everyone using the script and to those who had helped me with the project before, I appreciate you all a lot.
 
 
+
 CONTACT (READ FULLY BEFORE CONTACTING):
 
 If you're having problems with the script or are having issues understand how to use it feel free to contact my on Discord at 37scorpions.
