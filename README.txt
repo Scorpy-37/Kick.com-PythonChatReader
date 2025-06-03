@@ -1,5 +1,5 @@
 Hello, thank you for using my script for reading Kick.com chat messages!
-To understand how to use this script effectively I recommend at least skimming over this file.
+For you to understand how to use this script effectively I recommend you at least skim over this file.
 
 After 2 years of the script existing, and an entire year of me not maintaining it anymore, it is still surprisingly working with minimal issues and many people still using to read their stream chats.
 Thank you a lot to everyone using the script and to those who had helped me with the project before, I appreciate you all a lot.
