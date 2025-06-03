@@ -1,6 +1,7 @@
 from os import system as sys
 from time import sleep as wait
 from concurrent.futures import ThreadPoolExecutor as tpe
+import traceback
 
 import atexit
 from tkinter import messagebox
@@ -22,7 +23,13 @@ url = "https://www.kick.com/"+channel+"/chatroom"
 # Get the users chatroom url
 
 options = uc.ChromeOptions()
-browser = Chrome(use_subprocess=True, options=options)
+browser = None
+try:
+    browser = Chrome(use_subprocess=True, options=options)
+except Exception as e:
+    traceback.print_exc()
+if browser == None:
+    messagebox.showwarning("Warning", "The browser failed to start. This may be an issue that your browser is outdated. Update Chrome, or if that doesn't work, check the stack trace in the terminal.")
 browser.set_window_size(1, 1, browser.window_handles[0])
 # Open a new browser
 
